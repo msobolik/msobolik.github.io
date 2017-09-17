@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="container mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting" style="border: 2px solid {{page.color}}; margin-bottom:40px">
+    <div style="background-color:{{page.color}}">
+        <p style="text-align:right" class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>&nbsp</p>
+    </div>
+  <h1 class="h0 sm-width-full mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
+  <div class="col-4 sm-width-full mt-1 border-top-thin ">
+  </div>
+
+  <div>
+      {{ content }}
+  </div>
+
+</article>
